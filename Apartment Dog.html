@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+ <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+
+<title>Apartment Dog</title>
+<style type="text/css">
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.nav-item{
+	padding:9px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-variant:small-caps;
+}
+.nav-item:hover{
+	background-color:#9C9;
+	border:solid 3px #F00;
+	border-radius:10px;
+	padding:5px;}
+
+.carousel {
+	margin: -52px auto;
+	padding: 0 70px;
+	padding-top:160px;
+}
+.carousel .item {
+	min-height: 330px;
+    text-align: center;
+	overflow: hidden;
+}
+.carousel .item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .item .btn {
+	color: #333;
+    border-radius: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+.carousel .item .btn:hover, .carousel .item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 15px;
+}
+.carousel .carousel-control {
+	height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}
+.carousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.carousel .carousel-control.left i {
+	margin-right: -3px;
+}
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+  <a class="navbar-brand" href="Home.html"> <img alt="puupy" height="60" width="250" data-sticky-height="50" data-sticky-width="28" src="logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-center">
+     <li class="nav-item">
+        <a class="nav-link text-uppercase" href="family dog.html">Family Dogs<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="Apartment Dog.html">Apartment Dogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="dogs price.html">Dog Price</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="gallery.html">gallery</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<div class="mainheader">
+<img src="appartpic.jpg" class="img-fluid">
+<!------------slider---------------->
+
+<div class="container pb-5">
+<p class="text-center fa-2x pt-3 text-info" style="font-family: 'Saira Stencil One', cursive; border-bottom:2px solid #990;"><b>Best Apartment Dogs</b></p>
+<p class="container"  style="font-family: 'Lacquer', sans-serif;">Whether you're living in a cramped apartment, condo or studio, these easygoing breeds will fit just right in. These dogs are moderately active, they don't require much exercise and would rather chill at home with you. When considering adding a new furry family member into your home, don't forget to consider the breed's energy level, noisiness, and friendliness.</p>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators --> 
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/1.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Charlie</h4>
+									
+									 
+									 
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/2.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Max</h4>
+									
+									 
+									 
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/3.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Buddy</h4>
+								
+									
+									 
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/4.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Oscar</h4>
+							
+ 									 
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/5.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Milo</h4>
+								
+									 
+									 
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/6.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Archie</h4>
+								
+									
+									 
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/7.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Ollie</h4>
+							
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/8.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Molly</h4>
+									
+									 
+									 
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/9.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Ruby</h4>
+								
+									 
+									 
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/10.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Crook</h4>
+									
+									 
+									 
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/11.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Gog</h4>
+							
+									 
+									 
+								</div>						
+							</div>
+						</div>	
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="appart/12.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Aunal</h4>
+						
+									 
+									 
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<!-----------------slider end------------->
+</div>
+<!--------footer------------->
+<footer class="card-footer">
+<center>
+<img src="logo.png" class="figure-img">
+<div class="text-center pl-5 pr-5">
+<p class="text-black-50">PuppyPlace is a service committed to helping responsible breeders place their puppies with caring individuals and families in New York City, Los Angeles, San Francisco, Washington D.C., Dallas, and across the U.S</p>
+</div>
+CONTACT US:   <a href="mailto:PuppyPlace@gmail.com"><strong>PuppyPlace@gmail.com</strong></a>
+<div class="social pt-2 d-flex justify-content-center pt-4 pb-3">
+<div class="col-lg-1">
+<a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-1x" style="color:#3b5998;"></i></a></div>
+<div class="col-lg-1">
+<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-1x" style="color:#c4302b;"></i></a>
+</div>
+<div class="col-lg-1">
+<a href="https://www.instagram.com/"><i class="fab fa-instagram fa-1x" style="color:#3f729b;"></i></a>
+</div>
+<div class="col-lg-1">
+<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.plus&hl=en"><i class="fab fa-google-plus fa-1x" style="color:#DD4B39;"></i></a></div>
+</div>
+</center>
+
+</footer>
+<section style="background-color:#9e9d24;"> 
+<div class="container-fluid p-3">
+© All Rights Reserved by    <a href="Home.html" ><b>PuppyPlace</b></a> 
+
+<a href="about.html" class="s">About</a>
+
+<a href="contact.html" class="s">Contact</a>
+
+<a href="feedback.html" class="s">Feedback</a>
+</div>
+
+</section>
+
+</body>
+</html>

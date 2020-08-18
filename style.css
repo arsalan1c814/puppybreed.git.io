@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+
+#popupmain{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+	z-index:1001;
+	font-family: 'Slabo 27px', serif;
+
+	}
+.popup{
+	width:500px;
+	height:250px;
+	background-image:url('https://cdn.pixabay.com/photo/2015/11/17/23/33/mail-1048452__340.jpg');
+	background-size:cover;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	box-shadow:2px 2px 5px 3px #FFFFFF;
+	text-align:center;
+	background:rgba(0,0,0,0.6);
+	font-family: 'Slabo 27px', serif;
+
+	}
+
+#newhead{
+	transform:translateY(28px);
+	color:#FFF;
+	font-family: 'Slabo 27px', serif;
+
+	
+	}
+	
+#emailid{
+	width:60%;
+	padding:5px;
+	margin-top:60px;
+	margin-bottom:20px;
+	font-family: 'Slabo 27px', serif;
+	
+	}		
+	
+.submitid{
+	background-color:#0fc0fa;
+	border:none;
+	font-size:1rem;
+	padding:0.6rem 1rem;
+	color:#FFF;
+	border-radius:4px;
+	font-family: 'Slabo 27px', serif;
+
+
+
+}
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.nav-item{
+	padding:9px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-variant:small-caps;
+}
+.nav-item:hover{
+	background-color:#9C9;
+	border:solid 3px #F00;
+	border-radius:10px;
+	padding:5px;}
+	
+
+	
+.pb-3 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+
+}
+
+.pb-3 b {
+	color: #ffc000;
+}
+
+.pb-3::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	background: rgba(0, 0, 0, 0.2);
+	left: 0;
+	right: 0;
+	bottom: -1px;
+}
+
+h2.text-center.text-uppercase.pt-5{
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+
+}
+
+div.col-lg-6.col-md-6.pt-5{margin-top:50px;}
+
+h3.text-uppercase{font-family: 'Righteous', cursive;
+}
+
+h5.text-uppercase.pt-3{font-family: 'Righteous', cursive;
+}
+
+h5.text-uppercase{font-family: 'Righteous', cursive;
+}
+
+
+#link{padding-left:120px;
+position:relative;}
+
+
+
+
+
+.text-uppercase{font-family: 'Baloo Chettan', cursive;
+}
+
+
+
+.card-footer{background-color:#F00;}
+	
+div.container-fluid.p-3 a.s{
+	float:right;
+	padding-left:50px;
+	padding-right:20px;
+	font-family: 'Baloo Chettan', cursive;
+	color:#FFF;}
+	
+	
+div.text-center.pl-5.pr-5 p.text-black-50{font-family: 'Baloo Chettan', cursive;
+word-spacing:5px;
+font-size:18px;}	
+
+
+p.pt-2.text-justify{font-family: 'Exo 2', sans-serif;
+}
+
+
+#lab{margin-top:80px;
+height:500px;
+width:100%;}
+
+
+.container{ margin-top:30px;}
+
+div.container hr{height:1px;}
+
+	
+@media only screen and (max-width: 750px) {
+
+div.container-fluid.p-3 a.s{display:none;}
+	
+}
+
+
+@media only screen and (max-width: 800px) {
+
+div img#image6{width:100%;
+height:100%;}
+	
+}
+
+.ns {
+  text-align: center;
+  padding: 32px;
+}
+
+.row4 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+ 
+ #un img{ width:100%;
+ height:100%;}
+  }
+  
+ 
+@media screen and (max-width: 700px) {
+ 
+.row{
+width: 430px;
+  }
+ 
+
+  
+.box3{animation-delay:1s;}
+.box1{animation-delay:2s;}
+.box9{animation-delay:3s;}
+.box2{animation-delay:4s;}
+.box6{animation-delay:5s;}
+
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  
+}
